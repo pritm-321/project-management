@@ -32,7 +32,7 @@ const sideVariants = {
     },
   },
   closed: {
-    clipPath: "circle(500px at 50px 50px)",
+    clipPath: "circle(30px at 50px 50px)",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -50,7 +50,7 @@ const Sidebar = () => {
       animate={open ? "open" : "closed"}
     >
       <motion.div
-        className=" fixed top-0 left-0 bottom-0 w-52 lg:w-96 z-50 bg-purple-950"
+        className=" fixed top-0 left-0 bottom-10 w-52 lg:w-80 z-50 bg-purple-950"
         variants={sideVariants}
       >
         <Links />
@@ -89,13 +89,13 @@ const Links = () => {
 const ToggleButton = ({ setOpen }) => {
   return (
     <button
-      className=" fixed w-12 h-12 rounded-lg top-6 left-6 bg-transparent cursor-pointer z-50"
+      className=" fixed flex w-12 h-12 rounded-lg top-9 left-8 bg-transparent cursor-pointer z-50 items-center justify-center"
       onClick={() => setOpen((prev) => !prev)}
     >
       <svg width="23" height="23" viewBox="0 0 23 23">
         <motion.path
           strokeWidth="3"
-          stroke="black"
+          stroke="white"
           strokeLinecap="round"
           variants={{
             closed: { d: "M 2 2.5 L 20 2.5" },
@@ -104,7 +104,7 @@ const ToggleButton = ({ setOpen }) => {
         />
         <motion.path
           strokeWidth="3"
-          stroke="black"
+          stroke="white"
           strokeLinecap="round"
           d="M 2 9.423 L 20 9.423"
           variants={{
@@ -114,7 +114,7 @@ const ToggleButton = ({ setOpen }) => {
         />
         <motion.path
           strokeWidth="3"
-          stroke="black"
+          stroke="white"
           strokeLinecap="round"
           variants={{
             closed: { d: "M 2 16.346 L 20 16.346" },
