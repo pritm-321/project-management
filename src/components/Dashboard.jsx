@@ -35,7 +35,7 @@ const Dashboard = () => {
   });
 
   const [showAddListModal, setShowAddListModal] = useState(false);
-  const [newListName, setNewListName] = useState('');
+  const [newListName, setNewListName] = useState('New List');
 
   const toggleAddListModal = () => {
     setShowAddListModal(!showAddListModal);
@@ -134,7 +134,7 @@ const Dashboard = () => {
             </label>
             <input
               id="newListName"
-              className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+              className="mt-1 block w-full text-black border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
               value={newListName}
               onChange={(e) => setNewListName(e.target.value)}
             />
