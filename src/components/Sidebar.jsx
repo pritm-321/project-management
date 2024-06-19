@@ -50,7 +50,7 @@ const Sidebar = () => {
       animate={open ? "open" : "closed"}
     >
       <motion.div
-        className=" fixed top-0 left-0 bottom-10 w-52 lg:w-80 z-50 bg-purple-950"
+        className=" fixed top-0 left-0 bottom-0 w-52 lg:w-80 z-50 bg-purple-950"
         variants={sideVariants}
       >
         <Links />

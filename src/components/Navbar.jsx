@@ -4,7 +4,7 @@ import Sidebar from './Sidebar'
 
 const Navbar = () => {
   return (
-    <div className='navbar fixed h-24 bg-white'><Sidebar/></div>
+    <div className='navbar fixed h-20 bg-white'><Sidebar/></div>
   )
 }
 
